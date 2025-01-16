@@ -1,6 +1,7 @@
 # PyMaze - Maze Game
 
-This project implements a maze game that allows users to visualize different pathfinding algorithms in action. 
+Overview
+PyMaze Algorithm Visualizer is an interactive application designed to create and solve mazes using various pathfinding algorithms. It provides an educational platform for understanding the mechanics of algorithms like BFS, DFS, A*, and Dijkstra in a visual and engaging way. 
 
 **Features:**
 
