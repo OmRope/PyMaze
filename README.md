@@ -1,58 +1,119 @@
 # PyMaze - Maze Game
 
-Overview
+**Overview**
+
 PyMaze Algorithm Visualizer is an interactive application designed to create and solve mazes using various pathfinding algorithms. It provides an educational platform for understanding the mechanics of algorithms like BFS, DFS, A*, and Dijkstra in a visual and engaging way. 
 
 **Features:**
 
-* **Maze Generation:** Generates customizable mazes with varying levels of complexity and obstacles.
-* **Algorithm Selection:** Choose from multiple pathfinding algorithms:
+* **Maze Generation: ** Generates customizable mazes with varying levels of complexity and obstacles.
+* **Algorithm Selection: ** Choose from multiple pathfinding algorithms:
     * Breadth-First Search (BFS)
     * Depth-First Search (DFS)
     * A* Search
     * Greedy Best-First Search
-* **Visualization:** Dynamically visualizes the pathfinding process in real-time, allowing users to observe how each algorithm explores the maze.
-* **Algorithm Comparison:** Observe the strengths and weaknesses of different algorithms in navigating the maze and dealing with various obstacles.
+* **Algorithm Comparison: ** Compare the performance (path length and execution time) of two algorithms.
+* **Customizable Parameters: **
+         * Maze dimensions
+         * Loop percentage (determines complexity)
+         * Start and end points
 
-**Challenges and Complexities:**
 
-* **Maze Design:** Designing mazes with varying levels of difficulty and interesting obstacle layouts to challenge the pathfinding algorithms.
-* **Algorithm Implementation:** Correctly implementing the pathfinding algorithms, ensuring efficiency and accuracy.
-* **Visualization:** Creating a clear and intuitive visualization of the pathfinding process, highlighting the current node, explored nodes, and the final path.
+# Getting Started
 
-**Algorithm Descriptions:**
+## Prerequisites
+Ensure you have the following installed:
 
-**Breadth-First Search (BFS)**
+- Python 3.7 or later
+- Required libraries:
+  - `tkinter`
+  - `pymaze`
 
-* **Exploration:** Explores all nodes at the current depth level before moving to the next level.
-* **Data Structure:** Uses a Queue.
-* **Time Complexity:** O(b^d) where b is the branching factor and d is the depth.
-* **Strengths:** Guaranteed to find the shortest path.
+Install additional dependencies if needed:
+```bash
+pip install pymaze
+```
 
-**Depth-First Search (DFS)**
+## Installation
+Clone the repository:
+```bash
+git clone https://github.com/OmRope/PyMaze.git
+cd PyMaze
+```
 
-* **Exploration:** Explores a single path as deeply as possible before backtracking.
-* **Data Structure:** Uses a Stack.
-* **Time Complexity:** O(b^m) where b is the branching factor and m is the maximum depth.
-* **Strengths:** Can find all possible paths, but may not be the shortest.
+Run the main script:
+```bash
+python main.py
+```
 
-**A* Search**
+---
 
-* **Exploration:** Uses a heuristic function to estimate the distance to the goal, guiding the search.
-* **Data Structure:** Typically uses a Priority Queue.
-* **Time Complexity:** O(b^d) in the best case, but can be slower in practice depending on the heuristic.
-* **Strengths:** Efficient and guaranteed to find the shortest path if the heuristic is admissible.
+# Usage
 
-**Greedy Best-First Search**
+### Step 1: Configure the Maze
+- Input maze dimensions (rows and columns).
+- Set the loop percentage for complexity (1-100%).
 
-* **Exploration:** Prioritizes nodes closest to the goal based on a heuristic.
-* **Data Structure:** Uses a Priority Queue.
-* **Time Complexity:** O(b^d)
-* **Strengths:** Efficient in finding a path quickly, but may not always find the shortest path.
+### Step 2: Define Start and End Points
+- Choose whether to specify the end coordinates manually or use the default.
 
-**Working of PyMaze**
+### Step 3: Select an Algorithm
+- Choose a pathfinding algorithm to solve the maze.
 
-1. **Algorithm Selection:** Choose the desired pathfinding algorithm.
-2. **Maze Generation:** Generate a maze with varying complexity and obstacles.
-3. **Visualization:** Run the selected algorithm and visualize its exploration process step-by-step.
+### Step 4: Compare Algorithms (Optional)
+- Select two algorithms to compare their performance metrics.
+
+---
+
+# Visual Components
+
+## Tkinter GUI
+- **Canvas Creation**: The GUI enables interactive maze generation and solving.
+- **Control Panel**: Buttons and input fields for algorithm selection and configuration.
+
+---
+
+# Available Algorithms
+
+### Breadth-First Search (BFS)
+- Explores the shortest path by expanding all neighbors at the current depth.
+
+### Depth-First Search (DFS)
+- Explores paths by going deep before backtracking.
+
+### A* Search
+- Combines heuristic and path cost for optimal pathfinding.
+
+### Dijkstra's Algorithm
+- Finds the shortest path by expanding nodes with the least cumulative cost.
+
+---
+
+# Code Structure
+- `main.py`: Entry point of the application.
+- `agents.py`: Defines agent behaviors for maze traversal.
+- `pymaze`: Core library for maze generation and visualization.
+
+---
+
+# Demo
+Run the application:
+```bash
+python main.py
+```
+Follow the prompts in the console to create and solve a maze.
+Visualize the results on the graphical interface.
+
+---
+
+# Future Enhancements
+- Add more algorithms (e.g., Greedy Best-First Search).
+- Implement 3D mazes for advanced visualization.
+- Provide detailed performance analysis graphs.
+
+---
+
+# Contributing
+Feel free to fork this repository and submit pull requests. Contributions are always welcome!
+
 
