@@ -1,23 +1,31 @@
-# PyMaze - Maze Game
+# PyMaze Algorithm Visualizer
 
-**Overview**
+## Overview
+PyMaze Algorithm Visualizer is an interactive application that allows users to create and solve mazes using various pathfinding algorithms. The platform is designed to provide an educational and engaging experience, helping users understand the mechanics and functionality of algorithms such as BFS, DFS, A*, and Dijkstra. Through this tool, users can explore how different algorithms perform on mazes of varying complexities.
 
-PyMaze Algorithm Visualizer is an interactive application designed to create and solve mazes using various pathfinding algorithms. It provides an educational platform for understanding the mechanics of algorithms like BFS, DFS, A*, and Dijkstra in a visual and engaging way. 
+## Features
 
-**Features:**
+### Maze Generation
+- Create a maze of custom dimensions and complexity.
+- Set maze dimensions to any size.
+- Control the complexity with a loop percentage, which determines the maze's intricacy.
 
-* **Maze Generation: ** Generates customizable mazes with varying levels of complexity and obstacles.
-* **Algorithm Selection: ** Choose from multiple pathfinding algorithms:
-    * Breadth-First Search (BFS)
-    * Depth-First Search (DFS)
-    * A* Search
-    * Greedy Best-First Search
-* **Algorithm Comparison: ** Compare the performance (path length and execution time) of two algorithms.
-* **Customizable Parameters: **
-         * Maze dimensions
-         * Loop percentage (determines complexity)
-         * Start and end points
+### Pathfinding Algorithms
+Visualize and compare the following pathfinding algorithms:
+- **Breadth-First Search (BFS)**
+- **Depth-First Search (DFS)**
+- **A* Search**
+- **Dijkstra's Algorithm**
 
+### Algorithm Comparison
+- Compare the performance of two algorithms:
+  - Path length
+  - Execution time
+
+### Customizable Parameters
+- **Maze Dimensions**: Set the width and height of the maze.
+- **Loop Percentage**: Determines the complexity of the maze.
+- **Start and End Points**: Define custom start and end points for pathfinding algorithms.
 
 # Getting Started
 
